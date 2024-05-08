@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.demo.views.MyCustomConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.demo.views.MyCustomConstraintLayout
+        android:layout_width="@dimen/_zero_dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20dp"
+        android:layout_marginEnd="@dimen/_20dp"
+        app:MyConBackgroundColor="@color/white"
+        app:MyConCorRadiusBottomLeft="@dimen/_12dp"
+        app:MyConCorRadiusBottomRight="@dimen/_12dp"
+        app:MyConCorRadiusTopLeft="@dimen/_12dp"
+        app:MyConCorRadiusTopRight="@dimen/_12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.demo.views.MyCustomTextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16dp"
+            android:layout_marginTop="@dimen/_12dp"
+            android:layout_marginEnd="@dimen/_16dp"
+            android:gravity="center"
+            android:padding="@dimen/_5dp"
+            android:text="@string/update_available"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:myFontFamily="medium" />
+
+        <com.demo.views.MyCustomTextView
+            android:id="@+id/txtDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16dp"
+            android:layout_marginTop="@dimen/_12dp"
+            android:layout_marginEnd="@dimen/_16dp"
+            android:padding="@dimen/_5dp"
+            android:text="new updates"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_18sp"
+            app:layout_constraintEnd_toEndOf="@id/txtTitle"
+            app:layout_constraintStart_toStartOf="@id/txtTitle"
+            app:layout_constraintTop_toBottomOf="@id/txtTitle"
+            app:myFontFamily="regular" />
+
+        <com.demo.views.MyCustomButton
+            android:id="@+id/btnUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginBottom="@dimen/_16dp"
+            android:background="@drawable/gradient_btn_bg"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/_40dp"
+            android:paddingTop="@dimen/_12dp"
+            android:paddingBottom="@dimen/_12dp"
+            android:text="@string/update"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/txtTitle"
+            app:layout_constraintStart_toStartOf="@id/txtTitle"
+            app:layout_constraintTop_toBottomOf="@id/txtDetails"
+            app:myFontFamily="bold" />
+
+    </com.demo.views.MyCustomConstraintLayout>
+
+</com.demo.views.MyCustomConstraintLayout>

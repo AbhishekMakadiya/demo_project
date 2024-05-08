@@ -1,0 +1,120 @@
+<resources>
+    <dimen name="default_corner_radius">0dp</dimen>
+    <dimen name="minus_1dp">-1dp</dimen>
+    <dimen name="minus_5dp">-5dp</dimen>
+    <dimen name="_half_dp">0.5dp</dimen>
+    <dimen name="_zero_dp">0dp</dimen>
+    <dimen name="_1dp">1dp</dimen>
+    <dimen name="_2dp">2dp</dimen>
+    <dimen name="_3dp">3dp</dimen>
+    <dimen name="_4dp">4dp</dimen>
+    <dimen name="_5dp">5dp</dimen>
+    <dimen name="_6dp">6dp</dimen>
+    <dimen name="_8dp">8dp</dimen>
+    <dimen name="_9dp">9dp</dimen>
+    <dimen name="_10dp">10dp</dimen>
+    <dimen name="_11dp">11dp</dimen>
+    <dimen name="_14dp">14dp</dimen>
+    <dimen name="_15dp">15dp</dimen>
+    <dimen name="_16dp">16dp</dimen>
+    <dimen name="_17dp">17dp</dimen>
+    <dimen name="_18dp">18dp</dimen>
+    <dimen name="_20dp">20dp</dimen>
+    <dimen name="_22dp">22dp</dimen>
+    <dimen name="_24dp">24dp</dimen>
+    <dimen name="_25dp">25dp</dimen>
+    <dimen name="_30dp">30dp</dimen>
+    <dimen name="_36dp">36dp</dimen>
+    <dimen name="_35dp">35dp</dimen>
+    <dimen name="_40dp">40dp</dimen>
+    <dimen name="_45dp">45dp</dimen>
+    <dimen name="_50dp">50dp</dimen>
+    <dimen name="_55dp">55dp</dimen>
+    <dimen name="_56dp">56dp</dimen>
+    <dimen name="_60dp">60dp</dimen>
+    <dimen name="_65dp">65dp</dimen>
+    <dimen name="_70dp">70dp</dimen>
+    <dimen name="_75dp">75dp</dimen>
+    <dimen name="_80dp">80dp</dimen>
+    <dimen name="_85dp">85dp</dimen>
+    <dimen name="_90dp">90dp</dimen>
+    <dimen name="_95dp">95dp</dimen>
+    <dimen name="_100dp">100dp</dimen>
+    <dimen name="_110dp">110dp</dimen>
+    <dimen name="_120dp">120dp</dimen>
+    <dimen name="_130dp">130dp</dimen>
+    <dimen name="_140dp">140dp</dimen>
+    <dimen name="_150dp">150dp</dimen>
+    <dimen name="_155dp">155dp</dimen>
+    <dimen name="_160dp">160dp</dimen>
+    <dimen name="_170dp">170dp</dimen>
+    <dimen name="_180dp">180dp</dimen>
+    <dimen name="_200dp">200dp</dimen>
+    <dimen name="_220dp">220dp</dimen>
+    <dimen name="_250dp">250dp</dimen>
+    <dimen name="_300dp">300dp</dimen>
+    <dimen name="_350dp">350dp</dimen>
+    <dimen name="_540dp">540dp</dimen>
+
+    <dimen name="_12dp">12dp</dimen>
+    <dimen name="_32dp">32dp</dimen>
+    <dimen name="_7dp">7dp</dimen>
+    <dimen name="_43dp">43dp</dimen>
+
+    <dimen name="txt_8sp">8sp</dimen>
+    <dimen name="txt_9sp">9sp</dimen>
+    <dimen name="txt_10sp">10sp</dimen>
+    <dimen name="txt_11sp">11sp</dimen>
+    <dimen name="txt_12sp">12sp</dimen>
+    <dimen name="txt_13sp">13sp</dimen>
+    <dimen name="txt_14sp">14sp</dimen>
+    <dimen name="txt_15sp">15sp</dimen>
+    <dimen name="txt_16sp">16sp</dimen>
+    <dimen name="txt_17sp">17sp</dimen>
+    <dimen name="txt_18sp">18sp</dimen>
+    <dimen name="txt_20sp">20sp</dimen>
+    <dimen name="txt_22sp">22sp</dimen>
+    <dimen name="txt_24sp">24sp</dimen>
+    <dimen name="txt_25sp">25sp</dimen>
+    <dimen name="txt_28sp">28sp</dimen>
+    <dimen name="txt_30sp">30sp</dimen>
+    <dimen name="txt_32sp">32sp</dimen>
+    <dimen name="txt_35sp">35sp</dimen>
+    <dimen name="txt_40sp">40sp</dimen>
+
+    <dimen name="card_elevation">5dp</dimen>
+    <dimen name="card_corner_radius">7dp</dimen>
+    <dimen name="button_height">40dp</dimen>
+
+    <dimen name="profile_size">50dp</dimen>
+    <dimen name="profile_size_small">38dp</dimen>
+    <dimen name="half_profile_size">38dp</dimen>
+
+    <dimen name="horizontal_space">10dp</dimen>
+    <dimen name="vertical_space">8dp</dimen>
+    <dimen name="vertical_header_space">5dp</dimen>
+    <dimen name="_52dp">52dp</dimen>
+    <dimen name="listPopupWindowWidth">90dp</dimen>
+    <dimen name="minus_40dp">-40dp</dimen>
+    <dimen name="profile_picture">80dp</dimen>
+
+    <!--image picker-->
+    <dimen name="ucrop_default_crop_frame_stoke_width">1dp</dimen>
+    <dimen name="ucrop_default_crop_grid_stoke_width">0dp</dimen>
+    <dimen name="ucrop_padding_crop_frame">16dp</dimen>
+    <dimen name="ucrop_default_crop_rect_corner_touch_threshold">30dp</dimen>
+    <dimen name="ucrop_default_crop_rect_min_size">100dp</dimen>
+    <dimen name="ucrop_default_crop_rect_corner_touch_area_line_length">10dp</dimen>
+    <dimen name="_42dp">42dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="demo_menu_height">130dp</dimen>
+    <dimen name="demo_bottom_height">120dp</dimen>
+    <dimen name="demo_menu_item_space">10dp</dimen>
+    <dimen name="_48dp">48dp</dimen>
+    <dimen name="_28dp">28dp</dimen>
+    <dimen name="_46dp">46dp</dimen>
+
+</resources>

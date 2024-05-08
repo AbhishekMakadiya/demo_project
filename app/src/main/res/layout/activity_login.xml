@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ui.login.LoginActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_logo"
+        app:layout_constraintBottom_toTopOf="@id/layMainLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <com.demo.views.MyCustomConstraintLayout
+        android:id="@+id/layMainLogin"
+        android:layout_width="@dimen/_zero_dp"
+        android:layout_height="wrap_content"
+        app:MyConBackgroundColor="@color/black"
+        app:MyConCorRadiusTopRight="@dimen/_24dp"
+        app:MyConCorRadiusTopLeft="@dimen/_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.demo.views.MyCustomTextView
+            android:id="@+id/txtTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20dp"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:layout_marginTop="@dimen/_32dp"
+            android:layout_marginBottom="@dimen/_8dp"
+            android:text="@string/sign_up_to_continue"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/lblMobileNumber"
+            app:myFontFamily="semi_bold" />
+
+        <com.demo.views.MyCustomTextView
+            android:id="@+id/lblMobileNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8dp"
+            android:layout_marginBottom="@dimen/_12dp"
+            android:text="@string/mobile_number"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_16sp"
+            app:layout_constraintEnd_toEndOf="@id/txtTitle"
+            app:layout_constraintStart_toStartOf="@id/txtTitle"
+            app:layout_constraintTop_toBottomOf="@id/txtTitle"
+            app:layout_constraintBottom_toTopOf="@id/layMobileNumber"
+            app:myFontFamily="regular" />
+
+        <com.demo.views.MyCustomConstraintLayout
+            android:id="@+id/layMobileNumber"
+            android:layout_width="@dimen/_zero_dp"
+            android:layout_height="wrap_content"
+            android:paddingVertical="@dimen/_8dp"
+            android:layout_marginBottom="@dimen/_28dp"
+            app:MyConCorRadiusTopRight="@dimen/_24dp"
+            app:MyConCorRadiusTopLeft="@dimen/_24dp"
+            app:MyConCorRadiusBottomRight="@dimen/_24dp"
+            app:MyConCorRadiusBottomLeft="@dimen/_24dp"
+            app:MyConBackgroundColor="@color/transparent"
+            app:MyConBackgroundStrokeColor="@color/white"
+            app:MyConBackgroundStrokeSize="2"
+            android:background="@color/transparent"
+            app:layout_constraintStart_toStartOf="@id/txtTitle"
+            app:layout_constraintEnd_toEndOf="@id/txtTitle"
+            app:layout_constraintBottom_toTopOf="@id/btnContinue">
+
+            <com.demo.views.MyCustomEditText
+                android:id="@+id/edtCountryCode"
+                android:layout_width="@dimen/_60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4dp"
+                android:paddingVertical="@dimen/_12dp"
+                android:paddingHorizontal="@dimen/_8dp"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:editable="false"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                android:text="+91"
+                android:textSize="@dimen/txt_16sp"
+                android:textColorHint="@color/white40"
+                android:textColor="@color/white"
+                android:maxLines="1"
+                android:maxLength="5"
+                android:gravity="center"
+                style="@style/AppEditStyleLogin"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/edtMobileNo"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <com.demo.views.MyCustomEditText
+                android:id="@+id/edtMobileNo"
+                android:layout_width="@dimen/_zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4dp"
+                android:layout_marginEnd="@dimen/_4dp"
+                android:padding="@dimen/_12dp"
+                android:inputType="number"
+                android:imeOptions="actionDone"
+                android:hint="@string/hint_enter_your_mobile_number"
+                android:textSize="@dimen/txt_16sp"
+                android:textColorHint="@color/white40"
+                android:textColor="@color/white"
+                android:maxLines="1"
+                android:maxLength="10"
+                style="@style/AppEditStyleLogin"
+                app:layout_constraintStart_toEndOf="@id/edtCountryCode"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </com.demo.views.MyCustomConstraintLayout>
+
+        <com.demo.views.MyCustomButton
+            android:id="@+id/btnContinue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_40dp"
+            android:paddingStart="@dimen/_60dp"
+            android:paddingEnd="@dimen/_60dp"
+            android:paddingTop="@dimen/_10dp"
+            android:paddingBottom="@dimen/_10dp"
+            android:text="@string/text_continue"
+            android:textSize="@dimen/txt_16sp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textAllCaps="false"
+            app:myFontFamily="bold"
+            app:MyBtnBackgroundColor="@color/white"
+            app:MyBtnCorRadiusTopRight="@dimen/_32dp"
+            app:MyBtnCorRadiusTopLeft="@dimen/_32dp"
+            app:MyBtnCorRadiusBottomLeft="@dimen/_32dp"
+            app:MyBtnCorRadiusBottomRight="@dimen/_32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </com.demo.views.MyCustomConstraintLayout>
+
+    <include
+        android:id="@+id/lyProgress"
+        layout="@layout/progress_view_layout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

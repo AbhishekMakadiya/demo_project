@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+    <pl.pzienowicz.autoscrollviewpager.AutoScrollViewPager
+        android:id="@+id/mPager"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_zero_dp"
+        android:layout_marginTop="8dp"
+        ads:layout_constraintDimensionRatio="3:1"
+        ads:layout_constraintBottom_toTopOf="@id/indicator"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <com.hrskrs.instadotlib.InstaDotView
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8dp"
+        android:layout_marginBottom="@dimen/_4dp"
+        ads:dot_activeColor="@color/primaryDark"
+        ads:dot_activeSize="9dp"
+        ads:dot_inactiveColor="@color/primary"
+        ads:dot_inactiveSize="8dp"
+        ads:dot_margin="10dp"
+        ads:dot_mediumSize="6dp"
+        ads:dot_smallSize="4dp"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintTop_toBottomOf="@id/mPager"
+        ads:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

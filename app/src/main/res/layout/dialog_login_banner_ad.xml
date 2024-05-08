@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.demo.views.MyCustomConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgBanner"
+        android:layout_width="@dimen/_zero_dp"
+        android:layout_height="@dimen/_zero_dp"
+        android:layout_marginStart="@dimen/_20dp"
+        android:layout_marginEnd="@dimen/_20dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/login_banner"
+        app:layout_constraintDimensionRatio="9:16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8dp"
+        android:src="@drawable/ic_cancel"
+        app:layout_constraintTop_toTopOf="@id/imgBanner"
+        app:layout_constraintEnd_toEndOf="@id/imgBanner"/>
+
+</com.demo.views.MyCustomConstraintLayout>

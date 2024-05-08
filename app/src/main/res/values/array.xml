@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--choose photo-->
+    <string-array name="choose_photo">
+        <item>Take photo</item>
+        <item>Choose photo</item>
+    </string-array>
+
+    <!--choose transaction option-->
+    <string-array name="choose_transaction_option">
+        <item>Bank</item>
+        <item>Floxy Pay</item>
+    </string-array>
+</resources>

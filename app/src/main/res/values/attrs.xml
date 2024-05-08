@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <!-- {@deprecated Use civ_circlebackground_color instead.} -->
+        <attr name="civ_fill_color" format="color" />
+        <attr name="civ_circle_background_color" format="color" />
+    </declare-styleable>
+
+    <!--selected rounded image view-->
+    <declare-styleable name="MyRoundCornerImageView">
+        <attr name="MyRCICornerRadiusTopLeft" format="dimension" />
+        <attr name="MyRCICornerRadiusTopRight" format="dimension" />
+        <attr name="MyRCICornerRadiusBottomLeft" format="dimension" />
+        <attr name="MyRCICornerRadiusBottomRight" format="dimension" />
+        <attr name="MyRCIBorderWidth" format="dimension" />
+        <attr name="MyRCIBorderColor" format="color" />
+        <attr name="MyRCIOval" format="boolean" />
+        <attr name="MyRCIBackColor" format="color" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+
+    <!--view-->
+    <declare-styleable name="MyCustomView">
+        <attr name="MyViewBackgroundColor" format="color" />
+        <attr name="MyViewCorRadius" format="dimension" />
+    </declare-styleable>
+
+    <!--https://stackoverflow.com/questions/4434327/same-named-attributes-in-attrs-xml-for-custom-view-->
+    <declare-styleable name="MyFontsFamilyStyle">
+        <attr name="myFontFamily">
+            <enum name="regular" value="1" />
+            <enum name="semi_bold" value="2" />
+            <enum name="medium" value="3" />
+            <enum name="bold" value="4" />
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="MyCustomButton">
+        <attr name="myFontFamily" />
+        <attr name="MyBtnBackgroundStrokeColor" format="color" />
+        <attr name="MyBtnBackgroundStrokeSize" format="integer" />
+        <attr name="MyBtnBackgroundColor" format="color" />
+        <attr name="MyBtnCorRadiusTopLeft" format="dimension" />
+        <attr name="MyBtnCorRadiusTopRight" format="dimension" />
+        <attr name="MyBtnCorRadiusBottomRight" format="dimension" />
+        <attr name="MyBtnCorRadiusBottomLeft" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="MyCustomCheckBox">
+        <attr name="myFontFamily" />
+    </declare-styleable>
+
+    <declare-styleable name="MyCustomRadioButton">
+        <attr name="myFontFamily" />
+    </declare-styleable>
+    <declare-styleable name="MyCustomTextView">
+        <attr name="myFontFamily" />
+        <attr name="MyBackgroundStrokeColor" format="color" />
+        <attr name="MyBackgroundStrokeSize" format="integer" />
+        <attr name="MyBackgroundColor" format="color" />
+        <attr name="MyCorRadiusTopLeft" format="dimension" />
+        <attr name="MyCorRadiusTopRight" format="dimension" />
+        <attr name="MyCorRadiusBottomRight" format="dimension" />
+        <attr name="MyCorRadiusBottomLeft" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="MyCustomEditText">
+        <attr name="myFontFamily" />
+        <attr name="MyEdtBackgroundColor" format="color" />
+        <attr name="MyEdtBackgroundStrokeColor" format="color" />
+        <attr name="MyEdtBackgroundStrokeSize" format="integer" />
+        <attr name="MyEdtCorRadiusTopLeft" format="dimension" />
+        <attr name="MyEdtCorRadiusTopRight" format="dimension" />
+        <attr name="MyEdtCorRadiusBottomRight" format="dimension" />
+        <attr name="MyEdtCorRadiusBottomLeft" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="MyCustomSpinner">
+        <attr name="MySpiBackgroundColor" format="color" />
+        <attr name="MySpiBackgroundStrokeColor" format="color" />
+        <attr name="MySpiBackgroundStrokeSize" format="integer" />
+        <attr name="MySpiCorRadiusTopLeft" format="dimension" />
+        <attr name="MySpiCorRadiusTopRight" format="dimension" />
+        <attr name="MySpiCorRadiusBottomRight" format="dimension" />
+        <attr name="MySpiCorRadiusBottomLeft" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="MyCustomTextInputEditText">
+        <attr name="myFontFamily" />
+        <attr name="MyTIETBackgroundColor" format="color" />
+        <attr name="MyTIETBackgroundStrokeColor" format="color" />
+        <attr name="MyTIETBackgroundStrokeSize" format="integer" />
+        <attr name="MyTIETCorRadiusTopLeft" format="dimension" />
+        <attr name="MyTIETCorRadiusTopRight" format="dimension" />
+        <attr name="MyTIETCorRadiusBottomRight" format="dimension" />
+        <attr name="MyTIETCorRadiusBottomLeft" format="dimension" />
+    </declare-styleable>
+
+
+    <!--relative layout-->
+    <declare-styleable name="MyCustomRelativeLayout">
+        <attr name="MyRelBackgroundColor" format="color" />
+        <attr name="MyRelCorRadiusTopLeft" format="dimension" />
+        <attr name="MyRelCorRadiusTopRight" format="dimension" />
+        <attr name="MyRelCorRadiusBottomRight" format="dimension" />
+        <attr name="MyRelCorRadiusBottomLeft" format="dimension" />
+    </declare-styleable>
+
+    <!--ConstraintLayout layout-->
+    <declare-styleable name="MyCustomConstraintLayout">
+        <attr name="MyConBackgroundStrokeColor" format="color" />
+        <attr name="MyConBackgroundStrokeSize" format="integer" />
+        <attr name="MyConBackgroundColor" format="color" />
+        <attr name="MyConCorRadiusTopLeft" format="dimension" />
+        <attr name="MyConCorRadiusTopRight" format="dimension" />
+        <attr name="MyConCorRadiusBottomRight" format="dimension" />
+        <attr name="MyConCorRadiusBottomLeft" format="dimension" />
+    </declare-styleable>
+
+    <!--image picker crop view start-->
+    <declare-styleable name="ucrop_UCropView">
+        <!--Crop image view-->
+        <attr name="ucrop_aspect_ratio_x" format="float" />
+        <attr name="ucrop_aspect_ratio_y" format="float" />
+        <!--Overlay view-->
+        <attr name="ucrop_show_oval_crop_frame" format="boolean" />
+        <attr name="ucrop_oval_dimmed_layer" format="boolean" />
+        <attr name="ucrop_circle_dimmed_layer" format="boolean" />
+        <attr name="ucrop_dimmed_color" format="color" />
+        <attr name="ucrop_grid_stroke_size" format="dimension" />
+        <attr name="ucrop_grid_color" format="color" />
+        <attr name="ucrop_grid_row_count" format="integer" />
+        <attr name="ucrop_grid_column_count" format="integer" />
+        <attr name="ucrop_show_grid" format="boolean" />
+        <attr name="ucrop_frame_stroke_size" format="dimension" />
+        <attr name="ucrop_frame_color" format="color" />
+        <attr name="ucrop_show_frame" format="boolean" />
+    </declare-styleable>
+    <!--image picker crop view end-->
+
+    <declare-styleable name="AndroidTagView">
+        <attr name="vertical_interval" format="dimension" />
+        <attr name="horizontal_interval" format="dimension" />
+
+        <attr name="container_border_width" format="dimension" />
+        <attr name="container_border_radius" format="dimension" />
+        <attr name="container_border_color" format="color" />
+        <attr name="container_background_color" format="color" />
+        <attr name="container_enable_drag" format="boolean" />
+        <attr name="container_drag_sensitivity" format="float" />
+        <attr name="container_max_lines" format="integer" />
+        <attr name="container_gravity" format="enum">
+            <enum name="left" value="3" />
+            <enum name="center" value="17" />
+            <enum name="right" value="5" />
+        </attr>
+
+        <attr name="tag_border_width" format="dimension" />
+        <attr name="tag_corner_radius" format="dimension" />
+        <attr name="tag_horizontal_padding" format="dimension" />
+        <attr name="tag_vertical_padding" format="dimension" />
+        <attr name="tag_text_size" format="dimension" />
+        <attr name="tag_bd_distance" format="dimension" />
+        <attr name="tag_text_color" format="color" />
+        <attr name="tag_border_color" format="color" />
+        <attr name="tag_background_color" format="color" />
+        <attr name="tag_max_length" format="integer" />
+        <attr name="tag_clickable" format="boolean" />
+        <attr name="tag_selectable" format="boolean" />
+        <attr name="tag_theme" format="enum">
+            <enum name="none" value="-1" />
+            <enum name="random" value="0" />
+            <enum name="pure_cyan" value="1" />
+            <enum name="pure_teal" value="2" />
+        </attr>
+        <attr name="tag_text_direction" format="enum" >
+            <enum name="ltr" value="3" />
+            <enum name="rtl" value="4" />
+        </attr>
+
+        <attr name="tag_ripple_color" format="color" />
+        <attr name="tag_ripple_alpha" format="integer" />
+        <attr name="tag_ripple_duration" format="integer" />
+
+        <attr name="tag_enable_cross" format="boolean" />
+        <attr name="tag_cross_width" format="dimension" />
+        <attr name="tag_cross_color" format="color" />
+        <attr name="tag_cross_line_width" format="dimension" />
+        <attr name="tag_cross_area_padding" format="dimension" />
+        <attr name="tag_support_letters_rlt" format="boolean" />
+        <attr name="tag_background" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SwipeDeck">
+        <attr name="max_visible" format="integer"/>
+        <attr name="rotation_degrees" format="float"/>
+        <attr name="card_spacing" format="dimension"/>
+        <attr name="render_above" format="boolean"/>
+        <attr name="render_below" format="boolean"/>
+        <attr name="opacity_end" format="float"/>
+        <attr name="card_gravity" format="enum">
+            <enum name="top" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="bottom" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ParticipantView">
+        <attr name="state" format="enum">
+            <enum name="video" value="0"/>
+            <enum name="no_video" value="1"/>
+            <enum name="selected" value="2"/>
+        </attr>
+        <attr name="identity" format="reference"/>
+        <attr name="mirror" format="boolean" />
+        <attr name="typeName" format="enum">
+            <enum name="fit" value="0"/>
+            <enum name="fill" value="1"/>
+            <enum name="balanced" value="2"/>
+        </attr>
+        <attr name="overlaySurface" format="boolean" />
+    </declare-styleable>
+
+</resources>

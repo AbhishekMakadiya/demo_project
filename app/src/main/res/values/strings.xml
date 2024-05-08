@@ -1,0 +1,156 @@
+<resources>
+    <string name="app_name">Demo Ads</string>
+
+    <array name="users">
+        <item>User 1</item>
+        <item>User 2</item>
+        <item>User 3</item>
+        <item>User 4</item>
+        <item>User 5</item>
+        <item>User 6</item>
+        <item>User 7</item>
+        <item>User 8</item>
+        <item>User 9</item>
+        <item>User 10</item>
+    </array>
+
+    <!--FCM-->
+    <string name="default_notification_channel_id">com.demo.ads.ANDROID</string>
+    <string name="please_wait">Please wait</string>
+    <string name="token_not_found">Fcm token not found.</string>
+    <string name="fcm_token_not_received">Fcm token information not found</string>
+    <string name="fetch_token_information">Fetching token information…</string>
+    <string name="retry">Retry</string>
+    <string name="try_again">Try Again</string>
+    <!--End FCM-->
+
+    <!--retrofit error msg-->
+    <string name="error_no_internet">No internet connection</string>
+    <string name="error_match_not_started_yet">Match has not started yet.</string>
+    <string name="error_connect">Connection Error</string>
+    <string name="something_want_wrong">Something went wrong. Please try again.</string>
+    <string name="something_want_server">Something went wrong at server</string>
+    <string name="request_error_time_out">Time Out, Please retry</string>
+    <string name="request_error_auth_failure">AuthFailureError</string>
+    <string name="request_error_server">ServerError</string>
+    <string name="request_error_parse">ParseError</string>
+    <string name="request_error_network">NetworkError</string>
+    <string name="request_error_no_response">No response from server</string>
+    <string name="request_error_no_response_login">No data getting in response from server</string>
+    <!--End retrofit error msg-->
+    <string name="share_content">I just learned about %1s on the Ahmedabad Heritage App.\n
+        Immerse yourself in the heritage of Ageless Ahmedabad with this app.\n
+        Download here https://tinyurl.com/ybtnu5ah</string>
+    <string name="send_to">Send to</string>
+    <string name="ok">OK</string>
+
+    <!--image picker-->
+    <string name="file_provider_authority" translatable="false">com.demo.ads.provider</string>
+    <string name="prompt_please_wait">Please wait</string>
+    <string name="prompt_max_image_file_size">Maximum file size is 2MB</string>
+    <string name="choose_photo_for_pin_location">Place picture</string>
+    <string name="choose_video_photo">Choose picture or video</string>
+    <string name="choose_photo">Choose image</string>
+    <string name="select_edit_option">Select edit option</string>
+    <string name="pick_image_intent_text">Choose an image</string>
+    <string name="retake">Cancel</string>
+    <string name="use_photo">Choose</string>
+    <string name="ucrop_error_input_data_is_absent">Both input and output Uri must be specified</string>
+    <string name="message_permission">You can change permission using app info setting</string>
+    <string name="title_camera_permission">Camera permission need to use this application</string>
+    <string name="title_storage_permission">Storage permission need to use this application</string>
+    <!--End image picker-->
+
+
+    <!--for location start-->
+    <string name="fetching_location">Fetching location…</string>
+    <string name="without_location_you_cant_get_request">Location permission is required for use this application.</string>
+    <string name="cancel">Cancel</string>
+    <!--for location end-->
+
+    <!--for Drawer Layout start-->
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <!--for Drawer Layout end-->
+
+    <string name="version_placeholder">Version %1s</string>
+
+
+    <string name="login">Login</string>
+    <string name="Signup">Signup</string>
+    <string name="login_desc">Lorem Ipsum is simply dummy \n text of the printing and</string>
+    <string name="hint_register_mobile_no">Enter registered mobile no.</string>
+    <string name="send_otp">SEND OTP</string>
+    <string name="new_user_create_account_here">New user? Create account here</string>
+    <string name="create_new_account">Create new account</string>
+    <string name="hint_full_name">Full name *</string>
+    <string name="hint_user_name">Username *</string>
+    <string name="hint_mobile_no">Mobile number </string>
+    <string name="hint_contact_no">Contact number *</string>
+    <string name="hint_code">Code *</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Enter Password</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="hint_select_role">Select role*</string>
+    <string name="submit">Submit</string>
+    <string name="enter_verification_code">Enter verification code</string>
+    <string name="code_desc">We sent you a verification code via SMS.</string>
+    <string name="home">Home</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="logout">Logout</string>
+    <string name="log_out_confirmation">Are You Sure You Want To Logout?</string>
+
+    <!-- for Login & Signup start -->
+    <string name="error_full_name">Please Enter Full name</string>
+    <string name="error_user_name">Please Enter Username</string>
+    <string name="error_name">Please Enter Name</string>
+    <string name="error_farm_name">Please Enter Farm Name</string>
+    <string name="error_country_code">Please Select Country Code</string>
+    <string name="error_mobile_number">Please Enter Mobile Number </string>
+    <string name="error_valid_mobile_Number">Please Enter Valid Mobile number</string>
+    <string name="error_email">Please Enter Email</string>
+    <string name="error_valid_email">Please Enter Valid Email</string>
+    <string name="error_password">Please Enter Password</string>
+    <string name="error_old_password">Please Enter Old Password</string>
+    <string name="error_new_password">Please Enter New Password</string>
+    <string name="error_confirm_password">Please Enter Confirm Password</string>
+    <string name="error_invalid_password">Enter Value Minimum  6 characters</string>
+    <string name="error_match_current_new_password">Old Password and New Password should not be same.</string>
+    <string name="error_not_match_both_password">New Password And Confirm Password Not Match.</string>
+    <string name="error_otp">Please Enter OTP</string>
+    <string name="error_valid_otp">Please Enter Valid OTP</string>
+    <!-- for Login & Signup end -->
+
+
+    <string name="contact_us">Contact Us</string>
+    >
+    <string name="rupees_value">₹%s</string>
+    <string name="update_available">Update Available</string>
+    <string name="update">Update</string>
+    <string name="password">Password</string>
+    <string name="sign_up_to_continue">Sign up to continue</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="text_continue">Continue</string>
+    <string name="hint_enter_your_mobile_number">Enter your Mobile Number</string>
+    <string name="enter_6_digit_verification_code_sent_to_your_mobile">Enter 6 Digit verification code sent to your mobile</string>
+    <string name="otp">OTP</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms">Terms</string>
+    <string name="support">Support</string>
+    <string name="payment">Payment</string>
+    <string name="exchanges">Exchanges</string>
+    <string name="wallet">Wallet</string>
+
+    // News App
+    <string name="top_headlines">Top Headlines</string>
+    <string name="browse">Browse</string>
+    <string name="share">Share</string>
+    <string name="save">Read later</string>
+    <string name="listen">Listen</string>
+    <string name="internet_warming">Check your Internet Connection and Try Again!</string>
+    <string name="news_placeholder">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+
+
+</resources>

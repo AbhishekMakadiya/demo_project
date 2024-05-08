@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.codeVerification.CodeVerificationActivity"
+    android:background="@color/black">
+
+    <include
+        android:id="@+id/toolbarParent"
+        layout="@layout/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.demo.views.MyCustomTextView
+        android:id="@+id/txtCodeDesc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20dp"
+        android:layout_marginEnd="@dimen/_20dp"
+        android:layout_marginTop="@dimen/_32dp"
+        android:text="@string/enter_6_digit_verification_code_sent_to_your_mobile"
+        android:textSize="@dimen/txt_16sp"
+        android:textColor="@color/white"
+        android:textAlignment="textStart"
+        android:gravity="start"
+        app:myFontFamily="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbarParent"/>
+
+    <com.demo.views.MyCustomTextView
+        android:id="@+id/txtOtp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_24dp"
+        android:text="@string/otp"
+        android:textSize="@dimen/txt_14sp"
+        android:textColor="@color/white"
+        android:textAlignment="textStart"
+        android:gravity="start"
+        app:myFontFamily="regular"
+        app:layout_constraintStart_toStartOf="@id/txtCodeDesc"
+        app:layout_constraintEnd_toEndOf="@id/txtCodeDesc"
+        app:layout_constraintTop_toBottomOf="@id/txtCodeDesc"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lyCode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_85dp"
+        app:layout_constraintStart_toStartOf="@id/txtCodeDesc"
+        app:layout_constraintEnd_toEndOf="@id/txtCodeDesc"
+        app:layout_constraintTop_toBottomOf="@id/txtCodeDesc">
+
+        <com.demo.views.MyCustomEditText
+            android:id="@+id/edt1"
+            android:layout_width="@dimen/_50dp"
+            android:layout_height="wrap_content"
+            style="@style/AppEditStyleCode"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/edt2"/>
+
+        <com.demo.views.MyCustomEditText
+            android:id="@+id/edt2"
+            android:layout_width="@dimen/_50dp"
+            android:layout_height="wrap_content"
+            style="@style/AppEditStyleCode"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/edt1"
+            app:layout_constraintEnd_toStartOf="@id/edt3"/>
+
+        <com.demo.views.MyCustomEditText
+            android:id="@+id/edt3"
+            android:layout_width="@dimen/_50dp"
+            android:layout_height="wrap_content"
+            style="@style/AppEditStyleCode"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/edt2"
+            app:layout_constraintEnd_toStartOf="@id/edt4"/>
+
+
+        <com.demo.views.MyCustomEditText
+            android:id="@+id/edt4"
+            android:layout_width="@dimen/_50dp"
+            android:layout_height="wrap_content"
+            style="@style/AppEditStyleCode"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/edt3"
+            app:layout_constraintEnd_toStartOf="@id/edt5"/>
+
+        <com.demo.views.MyCustomEditText
+            android:id="@+id/edt5"
+            android:layout_width="@dimen/_50dp"
+            android:layout_height="wrap_content"
+            style="@style/AppEditStyleCode"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/edt4"
+            app:layout_constraintEnd_toStartOf="@id/edt6"/>
+
+        <com.demo.views.MyCustomEditText
+            android:id="@+id/edt6"
+            android:layout_width="@dimen/_50dp"
+            android:layout_height="wrap_content"
+            style="@style/AppEditStyleCode"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/edt5"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.demo.views.MyCustomTextView
+        android:id="@+id/txtResendOtp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_24dp"
+        android:paddingVertical="@dimen/_4dp"
+        android:text="@string/resend_otp"
+        android:textSize="@dimen/txt_14sp"
+        android:textColor="@color/white"
+        android:textAlignment="textStart"
+        android:gravity="start"
+        app:myFontFamily="regular"
+        app:layout_constraintStart_toStartOf="@id/txtCodeDesc"
+        app:layout_constraintTop_toBottomOf="@id/lyCode"/>
+
+    <com.demo.views.MyCustomButton
+        android:id="@+id/btnContinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_65dp"
+        android:paddingStart="@dimen/_60dp"
+        android:paddingEnd="@dimen/_60dp"
+        android:paddingTop="@dimen/_12dp"
+        android:paddingBottom="@dimen/_12dp"
+        android:text="@string/text_continue"
+        android:textSize="@dimen/txt_16sp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:gravity="center"
+        app:myFontFamily="bold"
+        app:MyBtnBackgroundColor="@color/white"
+        app:MyBtnCorRadiusTopRight="@dimen/_32dp"
+        app:MyBtnCorRadiusTopLeft="@dimen/_32dp"
+        app:MyBtnCorRadiusBottomLeft="@dimen/_32dp"
+        app:MyBtnCorRadiusBottomRight="@dimen/_32dp"
+        app:layout_constraintStart_toStartOf="@id/txtCodeDesc"
+        app:layout_constraintEnd_toEndOf="@id/txtCodeDesc"
+        app:layout_constraintTop_toBottomOf="@id/txtResendOtp"/>
+
+    <include
+        android:id="@+id/lyProgress"
+        layout="@layout/progress_view_layout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
